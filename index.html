@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+    <title>Ithaka laughs</title>
+
+    <!-- Material Design Icons Extension -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" media="all" rel="stylesheet" type="text/css">
+    <!-- Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <!-- My CSS -->
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+    <!-- jQuery -->    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- Materialize javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <!-- My javascript -->
+    <script src="js/script.js"></script>
+    <script src="js/mustache.js"></script>
+
+    <!-- D3 -->
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.4/d3.js"></script>
+
+    <!-- Dropdown -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  </head>
+
+
+ 
+
+
+
+
+
+
+  <body class="grey lighten-2">
+
+  <!-- button -->
+<div class="btn-group" style="position:absolute; right:15px; top:15px; z-index:100">
+  <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" >
+    <span class="glyphicon glyphicon-bell"></span></button>
+  <ul class="dropdown-menu dropdown-menu-right">
+    <li><a href="#!">Restart</a></li>
+    <li><a href="mailto:weilcharlotte@gmail.com">Send love</a></li>
+  </ul>
+</div>
+    <div class="row center">
+
+
+          <div id='container_div'></div>
+
+
+          <script id="template" type="x-tmpl-mustache">
+
+            <audio id='{{name}}_audio' class="audio" preload="auto">
+              <source src='audio/{{name}}.mp3' type="audio/mpeg">
+            </audio>
+
+            <img id='{{name}}' class="circle avatar z-depth-2 blurred_pic" 
+                src='images/{{name}}.png'
+                onmouseover="PlaySound('{{name}}_audio')" 
+                onmouseout="StopSound('{{name}}_audio')" 
+                onclick="$('#{{name}}').removeClass('blurred_pic')">
+
+
+          </script>
+
+          <!-- OLLLLLLLLLD -->
+
+          
+          <!-- Test  
+           <audio id="angie_audio" class="audio" preload="auto">
+              <source src="audio/angie.mp3" type="audio/mpeg">
+            </audio> 
+  
+            <img id="angie" class="circle avatar z-depth-2 blurred_pic"
+                  src="images/angie.png"
+                  onmouseover="PlaySound('angie_audio')"
+                  onmouseout="StopSound('angie_audio')"
+                  onclick="$('#angie').removeClass('blurred_pic')">
+
+            <audio id="ian_audio" class="audio" preload="auto">
+              <source src="audio/ian.mp3" type="audio/mpeg">
+            </audio> 
+  
+            <img id="ian" class="circle avatar z-depth-2 blurred_pic"
+                  src="images/ian.png"
+                  onmouseover="PlaySound('ian_audio')"
+                  onmouseout="StopSound('ian_audio')"
+                  onclick="$('#ian').removeClass('blurred_pic')">
+
+            <audio id="charlie_audio" class="audio" preload="auto">
+              <source src="audio/charlie.mp3" type="audio/mpeg">
+            </audio> 
+  
+            <img id="charlie" class="circle avatar z-depth-2 blurred_pic"
+                  src="images/charlie.png"
+                  onmouseover="PlaySound('charlie_audio')"
+                  onmouseout="StopSound('charlie_audio')"
+                  onclick="$('#charlie').removeClass('blurred_pic')"> -->
+
+            <!--<img id="tareq" class="circle avatar z-depth-2 blurred_pic" src="images/tareq.png" onmouseover="PlaySound('test1')" onmouseout="StopSound('test1')" onclick="$('#tareq').removeClass('blurred_pic')">
+
+                        <img id="ii" class="circle avatar z-depth-2 blurred_pic" src="images/picture.png" onmouseover="PlaySound('test1')" onmouseout="StopSound('test1')" onclick="$('#ii').removeClass('blurred_pic')">
+
+            <img id="tareq" class="circle avatar z-depth-2 blurred_pic" src="images/tareq.png" onmouseover="PlaySound('test1')" onmouseout="StopSound('test1')" onclick="$('#tareq').removeClass('blurred_pic')">
+
+                        <img id="ii" class="circle avatar z-depth-2 blurred_pic" src="images/picture.png" onmouseover="PlaySound('test1')" onmouseout="StopSound('test1')" onclick="$('#ii').removeClass('blurred_pic')">
+
+            <img id="tareq" class="circle avatar z-depth-2 blurred_pic" src="images/isaac.png" onmouseover="PlaySound('test1')" onmouseout="StopSound('test1')" onclick="$('#tareq').removeClass('blurred_pic')">
+
+                        <img id="ii" class="circle avatar z-depth-2 blurred_pic" src="images/picture.png" onmouseover="PlaySound('test1')" onmouseout="StopSound('test1')" onclick="$('#ii').removeClass('blurred_pic')">
+
+            <img id="tareq" class="circle avatar z-depth-2 blurred_pic" src="images/isaac.png" onmouseover="PlaySound('test1')" onmouseout="StopSound('test1')" onclick="$('#tareq').removeClass('blurred_pic')">
+
+                        <img id="ii" class="circle avatar z-depth-2 blurred_pic" src="images/picture.png" onmouseover="PlaySound('test1')" onmouseout="StopSound('test1')" onclick="$('#ii').removeClass('blurred_pic')">
+
+            <img id="tareq" class="circle avatar z-depth-2 blurred_pic" src="images/damien.png" onmouseover="PlaySound('test1')" onmouseout="StopSound('test1')" onclick="$('#tareq').removeClass('blurred_pic')">
+
+                        <img id="ii" class="circle avatar z-depth-2 blurred_pic" src="images/picture.png" onmouseover="PlaySound('test1')" onmouseout="StopSound('test1')" onclick="$('#ii').removeClass('blurred_pic')">
+
+            <img id="tareq" class="circle avatar z-depth-2 blurred_pic" src="images/tareq.png" onmouseover="PlaySound('test1')" onmouseout="StopSound('test1')" onclick="$('#tareq').removeClass('blurred_pic')">
+            -->
+
+
+
+            <!-- DO A FUNCTION FOR THE ABOVE ! -->
+
+            <!--<svg height="200" width="200">
+              <circle cx="100" cy="100" r=80 fill="black"/>
+            </svg>-->
+
+
+          </div>
+        
+      
+
+    </div> <!-- close row center -->
+  </body>
+</html>
