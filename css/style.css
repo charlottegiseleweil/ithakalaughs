@@ -107,5 +107,5 @@ a.inline-icon i {
 }
 
 .blurred_pic{
-	filter: blur(8px) grayscale(100%);
+	filter: blur(10px) grayscale(100%);
 }
