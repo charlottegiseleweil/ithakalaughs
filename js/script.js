@@ -23,9 +23,10 @@ function generateLaughTemplate(d) {
      var laughs = ['ami','jack','rupa','elliot','angie','annalee',
         'damien','laura','kamakshi',
         'charlie','tareq','daniel','isaac','ian','caroline',
-        'karen','jan','john','catherine','kmo',
+        'karen','jan','john','catherine',
         'kelley','lee','lena','maria','wilson','omar',
-        'raquel','rob','tasha','tinker','tucker', 'jlo'];
+        'raquel','tasha','tinker','tucker', 'jlo','vanessa',
+        'kevin','rob','dj','natasha'];
 
 
 
